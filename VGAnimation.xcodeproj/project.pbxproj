@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84FF4C521CC784CF000529DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FF4C511CC784CF000529DB /* main.m */; };
+		84FF4C551CC784CF000529DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FF4C541CC784CF000529DB /* AppDelegate.m */; };
+		84FF4C581CC784CF000529DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FF4C571CC784CF000529DB /* ViewController.m */; };
+		84FF4C5B1CC784CF000529DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FF4C591CC784CF000529DB /* Main.storyboard */; };
+		84FF4C5D1CC784CF000529DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FF4C5C1CC784CF000529DB /* Assets.xcassets */; };
+		84FF4C601CC784CF000529DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FF4C5E1CC784CF000529DB /* LaunchScreen.storyboard */; };
+		84FF4C691CC90739000529DB /* VGKeepView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FF4C681CC90739000529DB /* VGKeepView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84FF4C4D1CC784CF000529DB /* VGAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VGAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FF4C511CC784CF000529DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84FF4C531CC784CF000529DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84FF4C541CC784CF000529DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84FF4C561CC784CF000529DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84FF4C571CC784CF000529DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84FF4C5A1CC784CF000529DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84FF4C5C1CC784CF000529DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84FF4C5F1CC784CF000529DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84FF4C611CC784CF000529DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FF4C671CC90739000529DB /* VGKeepView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VGKeepView.h; path = ../VGKeepView.h; sourceTree = "<group>"; };
+		84FF4C681CC90739000529DB /* VGKeepView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VGKeepView.m; path = ../VGKeepView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84FF4C4A1CC784CF000529DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84FF4C441CC784CF000529DB = {
+			isa = PBXGroup;
+			children = (
+				84FF4C4F1CC784CF000529DB /* VGAnimation */,
+				84FF4C4E1CC784CF000529DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84FF4C4E1CC784CF000529DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84FF4C4D1CC784CF000529DB /* VGAnimation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84FF4C4F1CC784CF000529DB /* VGAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				84FF4C671CC90739000529DB /* VGKeepView.h */,
+				84FF4C681CC90739000529DB /* VGKeepView.m */,
+				84FF4C531CC784CF000529DB /* AppDelegate.h */,
+				84FF4C541CC784CF000529DB /* AppDelegate.m */,
+				84FF4C561CC784CF000529DB /* ViewController.h */,
+				84FF4C571CC784CF000529DB /* ViewController.m */,
+				84FF4C591CC784CF000529DB /* Main.storyboard */,
+				84FF4C5C1CC784CF000529DB /* Assets.xcassets */,
+				84FF4C5E1CC784CF000529DB /* LaunchScreen.storyboard */,
+				84FF4C611CC784CF000529DB /* Info.plist */,
+				84FF4C501CC784CF000529DB /* Supporting Files */,
+			);
+			path = VGAnimation;
+			sourceTree = "<group>";
+		};
+		84FF4C501CC784CF000529DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84FF4C511CC784CF000529DB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84FF4C4C1CC784CF000529DB /* VGAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FF4C641CC784CF000529DB /* Build configuration list for PBXNativeTarget "VGAnimation" */;
+			buildPhases = (
+				84FF4C491CC784CF000529DB /* Sources */,
+				84FF4C4A1CC784CF000529DB /* Frameworks */,
+				84FF4C4B1CC784CF000529DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VGAnimation;
+			productName = VGAnimation;
+			productReference = 84FF4C4D1CC784CF000529DB /* VGAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84FF4C451CC784CF000529DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = vohulg;
+				TargetAttributes = {
+					84FF4C4C1CC784CF000529DB = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 84FF4C481CC784CF000529DB /* Build configuration list for PBXProject "VGAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84FF4C441CC784CF000529DB;
+			productRefGroup = 84FF4C4E1CC784CF000529DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84FF4C4C1CC784CF000529DB /* VGAnimation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84FF4C4B1CC784CF000529DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FF4C601CC784CF000529DB /* LaunchScreen.storyboard in Resources */,
+				84FF4C5D1CC784CF000529DB /* Assets.xcassets in Resources */,
+				84FF4C5B1CC784CF000529DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84FF4C491CC784CF000529DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FF4C691CC90739000529DB /* VGKeepView.m in Sources */,
+				84FF4C581CC784CF000529DB /* ViewController.m in Sources */,
+				84FF4C551CC784CF000529DB /* AppDelegate.m in Sources */,
+				84FF4C521CC784CF000529DB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84FF4C591CC784CF000529DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FF4C5A1CC784CF000529DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84FF4C5E1CC784CF000529DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FF4C5F1CC784CF000529DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84FF4C621CC784CF000529DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		84FF4C631CC784CF000529DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84FF4C651CC784CF000529DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VGAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vohulg.VGAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84FF4C661CC784CF000529DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VGAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vohulg.VGAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84FF4C481CC784CF000529DB /* Build configuration list for PBXProject "VGAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FF4C621CC784CF000529DB /* Debug */,
+				84FF4C631CC784CF000529DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FF4C641CC784CF000529DB /* Build configuration list for PBXNativeTarget "VGAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FF4C651CC784CF000529DB /* Debug */,
+				84FF4C661CC784CF000529DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84FF4C451CC784CF000529DB /* Project object */;
+}
