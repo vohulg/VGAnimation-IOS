@@ -22,6 +22,8 @@
 
 @property (strong, nonatomic) NSMutableArray* centerPointArr;
 
+@property (strong, nonatomic) NSArray* imageArr;
+
 enum VGAnimationDirectionMove {
     VGAnimationDirectionMoveForward,
     VGAnimationDirectionMoveBack
@@ -43,28 +45,33 @@ enum VGAnimationDirectionMove {
     CGFloat x = 0;
     CGFloat y = 0;
   
-    for (UIView* viewItem in arrSqwer) {
+    for (UIImageView* viewItem in arrSqwer) {
         
         
         switch ([arrSqwer indexOfObject:viewItem]) {
             case 0:
                 x = CGRectGetWidth(viewItem.frame) / 2;
                 y = CGRectGetHeight(viewItem.frame) / 2;
+                 //[viewItem setImage:[UIImage imageNamed:@"1.png"]];
+                
                 break;
                 
             case 1:
                 x = CGRectGetWidth(view.frame) - CGRectGetWidth(viewItem.frame) / 2;
                 y = CGRectGetHeight(viewItem.frame) / 2;
+                 //[viewItem setImage:[UIImage imageNamed:@"2.png"]];
                 break;
                 
             case 2:
                 x = CGRectGetWidth(view.frame) - CGRectGetWidth(viewItem.frame) / 2;
                 y = CGRectGetHeight(view.frame) - CGRectGetHeight(viewItem.frame) / 2;
+                 //[viewItem setImage:[UIImage imageNamed:@"3.png"]];
                 break;
                 
             case 3:
                 x = CGRectGetWidth(viewItem.frame) / 2;
                 y = CGRectGetHeight(view.frame) - CGRectGetHeight(viewItem.frame) / 2;
+                 //[viewItem setImage:[UIImage imageNamed:@"4.png"]];
                 break;
                 
                 
@@ -76,7 +83,9 @@ enum VGAnimationDirectionMove {
         NSInteger position = [arrSqwer indexOfObject:viewItem];
         
         viewItem.tag = position;
-        viewItem.backgroundColor = [colorArr objectAtIndex:position];
+        //viewItem.backgroundColor = [colorArr objectAtIndex:position];
+        
+       
         
         viewItem.center = CGPointMake(x, y);
         
@@ -86,12 +95,7 @@ enum VGAnimationDirectionMove {
         
         [self.positionArray addObject:[NSNumber numberWithInt:position]];
         
-        //VGKeepView* keeper = [[VGKeepView alloc]initWithView:viewItem];
         
-       // [self.positonDictionary setObject:[NSNumber numberWithInt:position] forKey:keeper];
-        
-       // NSLog(@"CGRect %@  \n",
-            //  NSStringFromCGPoint(viewItem.center));
         
     }
     
@@ -132,14 +136,25 @@ enum VGAnimationDirectionMove {
                       [UIColor blueColor],
                       nil];
     
+     self.imageArr = [NSArray arrayWithObjects:
+                                [UIImage imageNamed:@"1.png" ],
+                                [UIImage imageNamed:@"2.png" ],
+                                [UIImage imageNamed:@"3.png" ],
+                                [UIImage imageNamed:@"4.png" ], nil];
+                                  
+                                  
+    
+    
 }
 
 -(void)startAnimate
 {
-     for (UIView* viewItem in self.arrSqwer)
+    /*
+    for (UIView* viewItem in self.arrSqwer)
      {
          [self printViewInfo:viewItem];
      }
+     */
     
     
     NSInteger index = 0;
@@ -245,14 +260,12 @@ enum VGAnimationDirectionMove {
 {
     
     
-    //NSLog(@"\n\n duration: %d  \n\n", duration);
     
     [UIView animateWithDuration:duration
                           delay:delay
                         options:(options)
                      animations:^{
                          
-                        //NSLog(@"");
                          
                          
                         // 1 Get next position
@@ -271,8 +284,19 @@ enum VGAnimationDirectionMove {
                          viewFigure.center = nextPosition;
                          
                          //5. change color
-                         viewFigure.backgroundColor = [self.colorArr objectAtIndex:nextPos];
+                         //viewFigure.backgroundColor = [self.colorArr objectAtIndex:nextPos];
                          
+                         //6. change picture here
+                         if ([viewFigure isKindOfClass:[UIImageView class]]) {
+                             
+                             UIImageView* imageView = (UIImageView*)viewFigure;
+                             imageView.animationImages = self.imageArr;
+                             imageView.animationDuration = 3;
+                             [imageView startAnimating];
+                             
+                             
+                             
+                         }
                          
                                             }
                      completion:^(BOOL finished) {
